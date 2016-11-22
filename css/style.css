@@ -10,17 +10,11 @@ body {
   line-height: 1.6;
 }
 
-.main-content {
-  background: #f2f2f2;
-}
 
-section {
-  background: #fff;
-  padding: 4rem 0 7rem;
-}
-
-section:nth-child(even) {
-  background: #f5f5f5;
+.site-desc h1 {
+  font-family: 'Lato', Arial, sans-serif;
+  color: white;
+  font-size: 2em;
 }
 
 h2,
@@ -29,6 +23,8 @@ h3 {
   font-weight: 700;
   color: #4b4b4b;
 }
+
+
 /* ===================================== */
 /* ========= NAVIGATION MENU =========== */
 /* ===================================== */
@@ -70,7 +66,7 @@ h3 {
   background: #fff;
 }
 .navbar--color--ghost {
-  background-color: dodgerblue;
+  background-color: #2F60B2;
   /*background: rgba(0,0,0,0.2);*/
 }
 .navbar--color--ghost .navbar-brand,
@@ -83,12 +79,13 @@ h3 {
 /* ============== HERO ================= */
 /* ===================================== */
 
-.hero {
+.jumbotron {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   z-index: -2;
   background: url("") center top / cover no-repeat;
 }
+
 .overlay {
   position: absolute;
   z-index: -1;
@@ -96,6 +93,33 @@ h3 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: dodgerblue;
+  background-color: #2F60B2;
   /*background: rgba(0,0,0,0.4);*/
 }
+
+.site-desc {
+  z-index: 0;
+  margin-top: 200px;
+}
+
+/* ===================================== */
+/* ============= HOME  ================= */
+/* ===================================== */
+
+
+.main-content {
+  background: #f2f2f2;
+}
+
+section {
+  background: #fff;
+  padding: 4rem 0 7rem;
+}
+
+section:nth-child(even) {
+  background: #f5f5f5;
+}
+
+/* ===================================== */
+/* ==========TESTIMONIALS ============== */
+/* ===================================== */
