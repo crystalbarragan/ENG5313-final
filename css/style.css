@@ -13,8 +13,6 @@ body {
 
 a:link,
 a:visited {
-	font-weight: 500;
-	text-decoration: none;
   cursor: pointer;
 
 }
@@ -22,14 +20,51 @@ a:visited {
 a:hover,
 a:active {
 	font-weight: bold !important;
-  background-color: transparent !important;
 	transition: 0.5s;
   cursor: pointer;
 }
 
-.main-content {
-	padding: 50px 0;
+.bt {
+    background: #09b39c;
+    display: inline-block;
+    color: #fff;
+    padding: 4px 20px;
+    text-align: center;
+    border-bottom: #089b87 2px solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-borderradius: 5px;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -ms-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear
 }
+
+.bt:hover {
+    color: #fff;
+    background-color: #0acbb1
+}
+
+.bt.large {
+    font-size: 1.5em;
+    padding: 5px 20px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-borderradius: 8px
+}
+
+.bt .sub-text {
+    margin-top: -0.5em;
+    display: block;
+    font-size: 0.5em
+}
+
+
+/*.main-content {
+	padding: 50px 0;
+}*/
+
 
 /* ===================================== */
 /* ============ Typography ============= */
@@ -48,18 +83,25 @@ a:active {
 
 .nav-links ul li {
   font-family: 'Lato', Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #153071;
-  text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.nav-links ul li:hover {
+  font-weight: 500;
 }
 
 .site-desc {
   font-family: 'Lato', Arial, sans-serif;;
   font-size: 2em;
   font-weight: 900;
-  color: #153071;
+  color: #fff !important;
+}
+
+.subtitle {
+  color: #fff;
 }
 
 .section-title {
@@ -156,42 +198,35 @@ a:active {
 /* ===================================== */
 
 .jumbotron {
-	height: calc(100vh - 55px);
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	z-index: -1;
-	background-image: url(/assets/type_header.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	    -ms-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+	background-color: #2980B9;
 }
 
 .jumbotron .hero-box {
-	height: 300px;
+	height: 500px;
+  width: 500px;
   left: 0;
   top: 0;
 }
 
-.hero-box {
+/*.hero-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	background-color: rgba(255,255,255,0.5);
 	z-index: 1;
-}
+}*/
 
 /* ===================================== */
 /* ============== About ================ */
 /* ===================================== */
 
 #about {
-  background-color: #fff;
+  background-color: #ECF0F1;
 }
 
 .about-icons {
@@ -203,8 +238,7 @@ a:active {
 /* ===================================== */
 
 #services {
-  background-color: whitesmoke;
-  height: 200px;
+  background-color: #fff;
 }
 
 /* ===================================== */
@@ -212,7 +246,7 @@ a:active {
 /* ===================================== */
 
 #testimonials {
-  background-color: #7E8AA2;
+  background-color: #fff;
   height: 200px;
 }
 
@@ -221,7 +255,8 @@ a:active {
 /* ===================================== */
 
 #companies {
-
+  background-color: #3498DB;
+  height: 100px;
 }
 
 /* ===================================== */
@@ -229,7 +264,8 @@ a:active {
 /* ===================================== */
 
 #pricing {
-
+background-color: #2980B9;
+height: 100px;
 }
 
 
@@ -238,7 +274,7 @@ a:active {
 /* ===================================== */
 
 #footer {
-  background-color: #263248;
+  background-color: #2C3E50;
   height: 100px;
 }
 
