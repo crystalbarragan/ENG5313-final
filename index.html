@@ -17,24 +17,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Simple line icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
 
+    <section id="home">
+
     <!-- Main navigation -->
     <nav data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md" class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl">
       <div class="container">
 
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
-            <a href="#" class="navbar-brand">Userdocs.io</a>
+          <button type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-menu" aria-hidden="true"></span></button>
+            <a href="#" class="navbar-center navbar-brand"><i class="icon-book-open"></i>   Userdocs.io</a>
         </div>
 
-        <div id="mobileNav" class="collapse navbar-collapse">
+        <div id="mobileNav" class="collapse navbar-collapse nav-links">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Menu</a></li>
+            <li><a href="#">Pricing</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Central Texas</li>
@@ -45,29 +58,29 @@
                 <li><a href="#">Beaumont</a></li>
                 <li><a href="#">Port Arthur</a></li>
               </ul>
-            <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a style="color:" href="#">Shop</a></li>
+            <li><a href="#" class="shop">Shop</a></li>
             </li>
           </ul> <!-- /.navbar-nav -->
         </div>
       </div>
     </nav>
 
-    <!-- Content to allow scrolling-->
-    <div class="hero">
-    <div class="overlay"></div>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
       <div class="container">
-            <div class="row text-center hero-box">
-              <h1 class="site-desc">Start your mornings with our wood-fired coffee</h1>
-              <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
-            </div>
+          <div class="row text-center hero-box">
+            <h2 class="site-desc">Site tagline goes here</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
+          </div>
       </div>
     </div>
 
+</section>
+
     <div class="main-content">
 
-      <section>
+      <section class="about">
         <div class="container">
           <h2>Your journey starts here.</h2>
             <p> This is it. You've made it so far. There is no going back.</p>
@@ -78,7 +91,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="services">
         <div class="container">
           <h2>Your journey starts here.</h2>
             <p> This is it. You've made it so far. There is no going back.</p>
@@ -89,7 +102,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="testimonials">
         <div class="container">
           <h2>Your journey starts here.</h2>
             <p> This is it. You've made it so far. There is no going back.</p>
@@ -100,7 +113,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="companies">
         <div class="container">
           <h2>Your journey starts here.</h2>
             <p> This is it. You've made it so far. There is no going back.</p>
@@ -111,7 +124,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="pricing">
         <div class="container">
           <h2>Your journey starts here.</h2>
             <p> This is it. You've made it so far. There is no going back.</p>
@@ -122,40 +135,7 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
-          <h2>Your journey starts here.</h2>
-            <p> This is it. You've made it so far. There is no going back.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur?</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga autem dolore, ex nobis, iste quasi, asperiores esse repellendus tempore, obcaecati numquam minima maxime! Laboriosam, ut ipsam magnam corporis aut.</p>
-          <h3>Get lost and find yourself.</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat dolor molestias facere veritatis culpa amet fugiat debitis dolorem qui quidem consequuntur mollitia, nesciunt pariatur voluptatum! Dolor accusamus labore, sequi.</p>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <h2>Your journey starts here.</h2>
-            <p> This is it. You've made it so far. There is no going back.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur?</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga autem dolore, ex nobis, iste quasi, asperiores esse repellendus tempore, obcaecati numquam minima maxime! Laboriosam, ut ipsam magnam corporis aut.</p>
-          <h3>Get lost and find yourself.</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat dolor molestias facere veritatis culpa amet fugiat debitis dolorem qui quidem consequuntur mollitia, nesciunt pariatur voluptatum! Dolor accusamus labore, sequi.</p>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <h2>Your journey starts here.</h2>
-            <p> This is it. You've made it so far. There is no going back.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur?</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga autem dolore, ex nobis, iste quasi, asperiores esse repellendus tempore, obcaecati numquam minima maxime! Laboriosam, ut ipsam magnam corporis aut.</p>
-          <h3>Get lost and find yourself.</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat dolor molestias facere veritatis culpa amet fugiat debitis dolorem qui quidem consequuntur mollitia, nesciunt pariatur voluptatum! Dolor accusamus labore, sequi.</p>
-        </div>
-      </section>
-
-      <section>
+      <section id="footer">
         <div class="container">
           <h2>Your journey starts here.</h2>
             <p> This is it. You've made it so far. There is no going back.</p>
