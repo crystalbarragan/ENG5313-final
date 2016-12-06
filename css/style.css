@@ -31,6 +31,12 @@ a:active {
 	padding: 50px 0;
 }
 
+.section-line {
+	background: #333;
+	width: 55px;
+	height: 1px;
+	margin: 30px auto;
+}
 /* ===================================== */
 /* ============ Typography ============= */
 /* ===================================== */
@@ -156,12 +162,12 @@ a:active {
 /* ===================================== */
 
 .jumbotron {
-	height: calc(100vh - 55px);
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	z-index: -1;
-	background-image: url(/assets/type_header.jpg);
+	background-image: url();
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -198,13 +204,17 @@ a:active {
   width: 150px;
 }
 
+.about-text {
+  padding: 40px;
+}
+
 /* ===================================== */
 /* ============== Services ============= */
 /* ===================================== */
 
 #services {
   background-color: whitesmoke;
-  height: 200px;
+
 }
 
 /* ===================================== */
