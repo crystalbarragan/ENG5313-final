@@ -1,4 +1,4 @@
-'use strict';
+$(document).ready(function(){
 
 // grabbing the class names from the data attributes
 var navBar = $('.navbar'),
@@ -57,3 +57,12 @@ setInterval(function () {
   }
   // take a breath.. hold event listener from firing for 100ms
 }, 100);
+
+// Initiate WOW Plugin
+    wow = new WOW ({
+        mobile: false
+    });
+
+    wow.init();
+
+});
