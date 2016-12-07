@@ -31,6 +31,27 @@ a:active {
     min-height: 400px;
     background: transparent;
 }
+
+.box-shadow {
+  border-radius: 25px;
+  border: 1px solid #333;
+}
+
+/* 16x9 Aspect Ratio */
+.responsive {
+  position: relative;
+  padding-bottom: 54.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.responsive iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /* ===================================== */
 /* ============ Typography ============= */
 /* ===================================== */
@@ -59,7 +80,13 @@ a:active {
   font-family: 'Lato', Arial, sans-serif;;
   font-size: 2em;
   font-weight: 900;
-  color: #153071;
+  text-align: left;
+  color: #fff;
+}
+
+.subtitle {
+  color: #fff;
+  text-align: left;
 }
 
 .section-title {
@@ -104,6 +131,49 @@ a:active {
   font-weight: 900;
   color: #153071;
 }
+
+.large-serif {
+  font-family: Baskerville, serif;
+  font-weight: normal;
+	font-size: 2vw;
+  color: #fff;
+}
+
+.companies-text {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gray;
+  padding-bottom: 20px;
+}
+
+/*---Animated cursor--*/
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 /* ===================================== */
 /* ========= Navigation menu =========== */
 /* ===================================== */
@@ -163,12 +233,13 @@ a:active {
 /* ===================================== */
 
 .jumbotron {
-	height: 100vh;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	/*z-index: -1;*/
-	background-image: url();
+  background-color: #263248;
+	/*background-image: url();
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -176,7 +247,7 @@ a:active {
 	   -moz-background-size: cover;
 	    -ms-background-size: cover;
 	     -o-background-size: cover;
-	        background-size: cover;
+	        background-size: cover;*/
 }
 
 .jumbotron .hero-box {
@@ -189,8 +260,8 @@ a:active {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: rgba(255,255,255,0.5);
-	/*z-index: 1;*/
+	/*background-color: rgba(255,255,255,0.5);
+	z-index: 1;*/
 }
 
 /* ===================================== */
@@ -230,13 +301,16 @@ a:active {
   background-color: rgba(0,0,0,0.5);
 }
 
+.testimonial-box {
+}
 
 /* ===================================== */
 /* ============ Companies ============== */
 /* ===================================== */
 
 #companies {
-
+  padding: 50px 0;
+  background-color: #fff;
 }
 
 /* ===================================== */
@@ -260,3 +334,17 @@ a:active {
 /* ===================================== */
 /* ========== Media queries ============ */
 /* ===================================== */
+
+/*-- Limit font sizes --*/
+
+@media (max-width: 666.66667px) {
+  .limit-size {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1666.66667px) {
+  .limit-size {
+    font-size: 30px;
+  }
+}

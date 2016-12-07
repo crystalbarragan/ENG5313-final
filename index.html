@@ -67,8 +67,8 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <div class="container">
-          <div class="row text-center hero-box">
-            <h2 class="site-desc">We write your user instructions.</h2>
+          <div class="row hero-box">
+            <h2 class="site-desc"></h2><span class="typed-cursor"></span>
             <p class="subtitle">(So you don't have to).<p>
           </div>
         </div>
@@ -90,9 +90,9 @@
               <p class="about-text text-center">We're a small team of content strategists, information designers and technical writers. We write user instructions without the hassle. We work together to solve your documentation puzzles, and collaborate with your team to make sure we get it right, too.</p>
             </div>
 
-            <div class="col-xs-12">
-              <img class="img-responsive" src="http://placehold.it/" alt="About Us"/>
-            </div>
+          <!--<div class="col-xs-12 responsive">
+              <iframe src="https://spark.adobe.com/video/c8rmdnL6SBdLN/embed" allowfullscreen></iframe>
+            </div>-->
 
           </div> <!--./row-->
         </div><!--./container-->
@@ -141,17 +141,37 @@
       </section>
 
       <section id="testimonials" class="parallax-window" data-parallax="scroll" data-image-src="./assets/campus-panorama-edited.png">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-xs-12">
-              <p class="bold-white">"This is a very interesting testimonial from a very good client of ours. He says that we did an excellent job and that he recommends our service to anyone."</p>
+        <div class="container testimonial-box">
+          <div class="row">
+            <div class="col-md-6 text-left">
+              <p class="large-serif limit-size">"This is a very interesting testimonial from a very good client of ours. He says that we did an excellent job and that he recommends our service to anyone."</p>
             </div>
+            <div class="col-md-6"></div>
           </div>
         </div>
       </section>
 
       <section id="companies">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="companies-text">More than 70 teams and 200 developers love Userdocs.io</p>
+            </div>
+          </div>
 
+          <!-- Logos -->
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img class="img-responsive" src="http://placehold.it/300x100" alt="logo1"/>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img class="img-responsive" src="http://placehold.it/300x100" alt="logo1"/>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img class="img-responsive" src="http://placehold.it/300x100" alt="logo1"/>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="pricing">
@@ -177,6 +197,7 @@
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/wow.min.js"></script>
     <script type="text/javascript" src="./js/parallax.min.js"></script>
+    <script type="text/javascript" src="./js/typed.js"></script>
 
   </body>
 </html>
