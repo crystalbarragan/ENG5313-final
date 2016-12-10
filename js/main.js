@@ -67,7 +67,7 @@ setInterval(function () {
 
 // Typed.js
     $(".site-desc").typed({
-    strings: ["We write your user instructions.", "We create your product manuals."],
+    strings: ["We write your user instructions."],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed
@@ -101,6 +101,5 @@ setInterval(function () {
     // callback for reset
     resetCallback: function() {}
     });
-
 
 });

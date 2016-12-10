@@ -80,6 +80,7 @@ a:active {
   font-family: 'Lato', Arial, sans-serif;;
   font-size: 2em;
   font-weight: 900;
+  display: inline;
   text-align: left;
   color: #fff;
 }
@@ -153,7 +154,9 @@ a:active {
 /*---Animated cursor--*/
 
 .typed-cursor {
+    font-size: 2em;
     opacity: 1;
+    color: #fff;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
@@ -233,7 +236,7 @@ a:active {
 /* ===================================== */
 
 .jumbotron {
-	height: 80vh;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -318,7 +321,8 @@ a:active {
 /* ===================================== */
 
 #pricing {
-
+  padding: 50px 0;
+  background-color: #7E8AA2;
 }
 
 
