@@ -21,6 +21,9 @@
     <script src="https://use.typekit.net/zcd1red.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/29edb32b55.js"></script>
+
     <!-- Simple line icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
@@ -59,8 +62,8 @@
                 <li><a href="#">Beaumont</a></li>
                 <li><a href="#">Port Arthur</a></li>
               </ul>
-            <li><a href="#getstarted">Contact</a></li>
-            <li><a href="#" class="shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Get Started</a></li>
             </li>
           </ul> <!-- /.navbar-nav -->
         </div><!--nav-links-->
@@ -169,16 +172,18 @@
           </div>
 
           <!-- Logos -->
+        <div class="container logo-container"
           <div class="row">
             <div class="col-xs-12 col-md-4">
-              <img class="img-responsive" src="http://placehold.it/300x100" alt="logo1"/>
+              <img class="img-responsive logo" src="./assets/Texas-State.png" alt="Texas State Logo"/>
             </div>
             <div class="col-xs-12 col-md-4">
-              <img class="img-responsive" src="http://placehold.it/300x100" alt="logo1"/>
+              <img class="img-responsive logo" src="./assets/footnotes.png" alt="Found Logo"/>
             </div>
             <div class="col-xs-12 col-md-4">
-              <img class="img-responsive" src="http://placehold.it/300x100" alt="logo1"/>
+              <img class="img-responsive logo" src="./assets/found.png" alt="Footnotes Logo"/>
             </div>
+          </div>
         </div>
       </section>
 
@@ -258,7 +263,7 @@
         </div>
     </section>
 
-      <section id="getstarted">
+      <section id="contact">
         <div class="container">
           <div class="row text-center section-intro">
             <div class="col-xs-12">
@@ -298,22 +303,40 @@
 
       <section id="footer">
         <div class="container">
-		        <div class="row no-padding">
-			           <div class="col-sm-4 text-left">
-				            <p class="quicklinks-title light white">Quicklinks</p>
-                      <ul>
-                        <li></li>
-                      </ul>
-			            </div> <!-- .col-sm-6 -->
+		        <div class="row">
+			           <div class="col-sm-4 quicklinks">
+                    <ul class="text-left">
+                      <li class="quicklinks-title white">Quicklinks</li>
+                      <li><a href="#">About Userdocs.io</a></li>
+                      <li><a href="#">What We Do</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Work With Us!</a></li>
+                    </ul>
+			            </div> <!-- .col-sm-4 -->
 
-			            <div class="col-sm-4 text-left">
-				            <p>I have a blog, too!</p>
-				            <p>&copy; Crystal Barragán<br>2016, All Rights Reserved</p>
+			            <div class="col-sm-4 connect">
+                    <p class="white">Connect with us<p>
+                      <form class="form" action="https://formspree.io/crystalbarragan@icloud.com"
+              method="POST">
+                        <div class="form-group">
+                        <label class="light white" for="InputName">Sign up for Userdocs.io articles and resources: </label>
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button type="submit" value="send" class="btn btn-connect">Sign up</button>
+                        </div>
+                      </form>
 			            </div>
 
-			          <div class="col-sm-4 text-right" id="back-to-top">
-				          <a href="#home" title="Back To Top">Back To Top</a>
-			          </div> <!-- .col-sm-6 -->
+			          <div class="col-sm-4 text-right social-icons">
+				          <p><a id="back-to-top" href="#home" title="Back To Top">Back To Top</a></p>
+                    <p class="white">&copy; Crystal Barragán<br>2016, All Rights Reserved</p>
+                  <ul class="text-right">
+                    <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
+			          </div> <!-- .col-sm-4 -->
 		        </div> <!-- /.row -->
 	      </div> <!-- /.container -->
       </section>
