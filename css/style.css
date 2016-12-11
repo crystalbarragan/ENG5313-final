@@ -1,3 +1,9 @@
+/* Coded by Crystal Barragan. Elements
+/* inspired by many talented individuals.
+/* See my README doc for more information:
+
+
+
 /* ===================================== */
 /* ========= General styles ============ */
 /* ===================================== */
@@ -39,9 +45,11 @@ a:active {
   text-transform: uppercase;
   margin: 20px 0;
   border-bottom: 3px solid #d67729;
-  transition: all 0.3s;
   -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+
 }
+
 .btn-custom:hover {
   color: #fff;
   -webkit-transform: translateY(3px);
@@ -49,17 +57,13 @@ a:active {
       border-bottom: 3px solid transparent;
 }
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+.section-intro {
+  padding-bottom: 40px;
 }
 
-.box-shadow {
-  border-radius: 25px;
-  border: 1px solid #333;
-}
-
-/* 16x9 Aspect Ratio */
+/*----------------*/
+/*---- IFRAME  ---*/
+/*----------------*/
 .responsive {
   position: relative;
   padding-bottom: 54.25%;
@@ -75,10 +79,10 @@ a:active {
   height: 100%;
 }
 
-.section-intro {
-    padding-bottom: 40px;
-}
-/*------------------ Resets ------------------*/
+
+/* ===================================== */
+/* ============== Resets =============== */
+/* ===================================== */
 
 .container {
 	width: calc(100% - 50px);
@@ -95,8 +99,8 @@ a:active {
 }
 
 .no-padding [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .gutter-15 {
@@ -203,6 +207,14 @@ a:active {
   padding-bottom: 20px;
 }
 
+.quicklinks-title {
+  font-family: "canada-type-gibson", Arial, sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
 .light {
   font-style: normal;
   font-weight: 300;
@@ -218,30 +230,36 @@ a:active {
   font-weight: 600;
 }
 
-/*---Animated cursor--*/
+.icon-book-open {
+  font-size: .8em;
+}
+
+/*----------------*/
+/*--- TYPED.JS ---*/
+/*----------------*/
 
 .typed-cursor {
-    font-size: 2em;
-    opacity: 1;
-    color: #fff;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  font-size: 2em;
+  opacity: 1;
+  color: #fff;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 /* ===================================== */
@@ -257,11 +275,10 @@ a:active {
           transition: 0.4s;
 }
 
-.icon-book-open {
-  font-size: .8em;
-}
 
-/*--navbar sizes--*/
+/*----------------*/
+/*- NAVBAR SIZES -*/
+/*----------------*/
 .navbar--size--xl {
   padding: 4rem 0;
 }
@@ -275,7 +292,10 @@ a:active {
   padding: 0;
 }
 
-/*--navbar color--*/
+/*----------------*/
+/*- NAVBAR COLOR -*/
+/*----------------*/
+
 .navbar--color--white {
   background: #fff;
 }
@@ -290,7 +310,9 @@ a:active {
   /*background: rgba(0,0,0,0.2);*/
 }
 
-/*--navbar text color (start)--*/
+/*----------------*/
+/*NAVBAR TEXT START*/
+/*----------------*/
 .navbar--color--ghost .navbar-brand,
 .navbar--color--ghost,
 .navbar--color--ghost ul li a {
@@ -376,6 +398,11 @@ a:active {
 #testimonials {
   padding: 50px 0;
   background-color: rgba(0,0,0,0.5);
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
 
 .testimonial-box {
@@ -464,6 +491,10 @@ hr {
 /*----------------*/
 /*SPECIAL COLORING*/
 /*----------------*/
+
+.card-content h1 span {
+  font-size: 0.35em;
+}
 
 .card:nth-child(3) .card-info span {
   color: #E96D6D;
@@ -600,16 +631,6 @@ hr {
   }
 }
 
-/*----------------*/
-/*-- RESPONSIVE  -*/
-/*----------------*/
-
-@media (max-width: 900px){
-  .card {
-    width: 100%;
-  }
-}
-
 /* ===================================== */
 /* ============= Get Started ================ */
 /* ===================================== */
@@ -636,7 +657,9 @@ hr {
 /* ========== Media queries ============ */
 /* ===================================== */
 
-/*-- Limit font sizes --*/
+/*----------------*/
+/*-- LIMIT SIZES -*/
+/*----------------*/
 
 @media (max-width: 666.66667px) {
   .limit-size {
@@ -647,5 +670,15 @@ hr {
 @media (min-width: 1666.66667px) {
   .limit-size {
     font-size: 30px;
+  }
+}
+
+/*----------------*/
+/*---- CARDS  ----*/
+/*----------------*/
+
+@media (max-width: 900px){
+  .card {
+    width: 100%;
   }
 }
