@@ -1,62 +1,92 @@
 $(document).ready(function(){
 
-// grabbing the class names from the data attributes
-var navBar = $('.navbar'),
-    data = navBar.data();
-
-// booleans used to tame the scroll event listening a little..
-var scrolling = false,
-    scrolledPast = false;
-
-// transition Into
-function switchInto() {
-  // update `scrolledPast` bool
-  scrolledPast = true;
-  // add/remove CSS classes
-  navBar.removeClass(data.startcolor);
-  navBar.removeClass(data.startsize);
-  navBar.addClass(data.intocolor);
-  navBar.addClass(data.intosize);
-  console.log('into transition triggered!');
-};
-
-// transition Start
-function switchStart() {
-  // update `scrolledPast` bool
-  scrolledPast = false;
-  // add/remove CSS classes
-  navBar.addClass(data.startcolor);
-  navBar.addClass(data.startsize);
-  navBar.removeClass(data.intocolor);
-  navBar.removeClass(data.intosize);
-  console.log('start transition triggered!');
-}
-
-// set `scrolling` to true when user scrolls
-$(window).scroll(function () {
-  return scrolling = true;
+// Scroll Down
+  $('.learn-more').click(function() {
+  $('html,body').animate({
+      scrollTop: $('.about').offset().top},
+      'slow');
 });
 
-setInterval(function () {
-  // when `scrolling` becomes true...
-  if (scrolling) {
-    // set it back to false
-    scrolling = false;
-    // check scroll position
-    if ($(window).scrollTop() > 100) {
-      // user has scrolled > 100px from top since last check
-      if (!scrolledPast) {
-        switchInto();
-      }
-    } else {
-      // user has scrolled back <= 100px from top since last check
-      if (scrolledPast) {
-        switchStart();
+// Smooth Scrolling
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+// Navigation Menu
+  var navBar = $('.navbar'),
+      data = navBar.data();
+
+  // booleans used to tame the scroll event listening a little..
+  var scrolling = false,
+      scrolledPast = false;
+
+  // transition Into
+  function switchInto() {
+    // update `scrolledPast` bool
+    scrolledPast = true;
+    // add/remove CSS classes
+    navBar.removeClass(data.startcolor);
+    navBar.removeClass(data.startsize);
+    navBar.addClass(data.intocolor);
+    navBar.addClass(data.intosize);
+    console.log('into transition triggered!');
+  };
+
+  // transition Start
+  function switchStart() {
+    // update `scrolledPast` bool
+    scrolledPast = false;
+    // add/remove CSS classes
+    navBar.addClass(data.startcolor);
+    navBar.addClass(data.startsize);
+    navBar.removeClass(data.intocolor);
+    navBar.removeClass(data.intosize);
+    console.log('start transition triggered!');
+  }
+
+  // set `scrolling` to true when user scrolls
+  $(window).scroll(function () {
+    return scrolling = true;
+  });
+
+  setInterval(function () {
+    // when `scrolling` becomes true...
+    if (scrolling) {
+      // set it back to false
+      scrolling = false;
+      // check scroll position
+      if ($(window).scrollTop() > 100) {
+        // user has scrolled > 100px from top since last check
+        if (!scrolledPast) {
+          switchInto();
+        }
+      } else {
+        // user has scrolled back <= 100px from top since last check
+        if (scrolledPast) {
+          switchStart();
+        }
       }
     }
-  }
-  // take a breath.. hold event listener from firing for 100ms
-}, 100);
+    // take a breath.. hold event listener from firing for 100ms
+  }, 100);
 
 // Initiate WOW Plugin
     wow = new WOW ({
