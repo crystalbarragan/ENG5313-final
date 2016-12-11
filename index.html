@@ -17,6 +17,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/zcd1red.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <!-- Simple line icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
@@ -66,8 +70,8 @@
     <section id="home">
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <div class="container">
-          <div class="row hero-box" style="display: inline;">
+        <div class="container hero-box">
+          <div class="row" style="display: inline;">
             <h2 class="site-desc"><span class="typed-cursor"></span></h2>
             <p class="subtitle">(So you don't have to).<p>
             <button class="btn btn-custom learn-more" type="submit">Learn More</button>
@@ -78,9 +82,9 @@
 
       <section class="about" id="about">
         <div class="container">
-          <div class="row">
+          <div class="row section-intro">
             <div class="col-xs-12">
-              <h2 class="section-title">Our story</h2>
+              <h2 class="section-title blue">Our story</h2>
             </div>
           </div>
         </div>
@@ -104,9 +108,10 @@
 
       <section id="services">
         <div class="container">
-          <div class="row text-center">
+          <div class="row text-center section-intro">
             <div class="col-xs-12">
-              <h2 class="section-title">Usable documentation at your fingertips</h2>
+              <h2 class="section-title blue">Usable documentation at your fingertips</h2>
+                <p>We offer a range of writing and consulting services for companies large and small.</p>
             </div>
           </div>
         </div>
@@ -179,70 +184,113 @@
 
       <section id="pricing">
         <div class="container">
-          <div class="row text-center">
+          <div class="row text-center section-intro">
             <div class="col-xs-12">
-              <h2 class="section-title">Pricing</h2>
+              <h2 class="section-title blue">Find a plan that's right for you</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing cards -->
+        <div class="container" id="pricing-content">
+          <div class="card">
+            <div class="card-content">
+              <h5>Basic</h5>
+              <hr>
+              <h1><span>$</span>5.99</h1>
+              <hr>
+            <div class="card-info">
+              <p><span>500 MB</span> data</p>
+              <p><span>10 GB</span> storage</p>
+              <p><span>3 months</span> support</p>
+            </div>
+              <hr>
+            <button class="btn btn-pricing">GET IT</button>
             </div>
           </div>
 
-          <div class="row text-center gutter-30">
-            <div class="col-xs-12 col-md-4 pricing-box">
-              <p>Complete User Guide Solution</p>
-              <img src="http://placehold.it/200x300"/>
-              <p>$200</p>
-              <p>Enter brief description of the solution here</p>
+          <div class="card special">
+            <div class="medal">
+              <div class="medal-outer">
+                <div class="medal-inner"></div>
+              </div>
+
+              <div class="ribbons">
+                <div class="ribbon left"></div>
+                <div class="ribbon right"></div>
+              </div>
             </div>
 
-            <div class="col-xs-12 col-md-4 pricing-box">
-              <p>Complete User Guide Solution</p>
-              <img src="http://placehold.it/200x300"/>
-              <p>$200</p>
-              <p>Enter brief description of the solution here</p>
+            <div class="card-header">
+              <p>MOST POPULAR</p>
             </div>
-
-            <div class="col-xs-12 col-md-4 pricing-box">
-              <p>Complete User Guide Solution</p>
-              <img src="http://placehold.it/200x300"/>
-              <p>$200</p>
-              <p>Enter brief description of the solution here</p>
+            <div class="card-content">
+              <h5>Regular</h5>
+              <hr>
+              <h1><span>$</span>10.99</h1>
+              <hr>
+            <div class="card-info">
+              <p><span>1 GB</span> data</p>
+              <p><span>20 GB</span> storage</p>
+              <p><span>5 months</span> support</p>
+            </div>
+              <hr>
+              <button class="btn btn-pricing">GET IT</button>
             </div>
           </div>
-      </section>
+
+          <div class="card">
+            <div class="card-content">
+              <h5>Premium</h5>
+              <hr>
+              <h1><span>$</span>20.99</h1>
+              <hr>
+            <div class="card-info">
+              <p><span>5 GB</span> data</p>
+              <p><span>40 GB</span> storage</p>
+              <p><span>12 months</span> support</p>
+            </div>
+              <hr>
+            <button class="btn btn-pricing">GET IT</button>
+            </div>
+          </div>
+        </div>
+    </section>
 
       <section id="getstarted">
         <div class="container">
-          <div class="row text-center">
+          <div class="row text-center section-intro">
             <div class="col-xs-12">
-              <h2 class="section-title">Contact Us</h2>
+              <h2 class="section-title white">Contact us</h2>
             </div>
           </div>
 
+        <div class="container" id="form-content">
+          <form class="form-horizontal" action="https://formspree.io/crystalbarragan@icloud.com"
+  method="POST">
+            <div class="form-group">
+            <label for="InputName">Your name</label>
+            <input type="name" class="form-control" id="InputName">
+            </div>
 
-              <form class="form-horizontal" action="https://formspree.io/crystalbarragan@icloud.com"
-      method="POST">
-                <div class="form-group">
-                <label for="InputName">Your name</label>
-                <input type="name" class="form-control" id="InputName">
-                </div>
+            <div class="form-group">
+              <label for="InputEmail">Your email address</label>
+              <input type="email" class="form-control" id="InputEmail">
+            </div>
 
-                <div class="form-group">
-                  <label for="InputEmail">Your email address</label>
-                  <input type="email" class="form-control" id="InputEmail">
-                </div>
-
-                <div class="form-group">
-                  <label for="InputMessage">How can we help?</label>
-                  <textarea class="form-control" id="InputMessage" placeholder="Your message" rows="5">
-                  </textarea>
-                </div>
+            <div class="form-group">
+              <label for="InputMessage">How can we help?</label>
+              <textarea class="form-control" id="InputMessage" placeholder="Your message" rows="5">
+              </textarea>
+            </div>
 
 
-                <div class="checkbox">
-                  <label></label>
-                </div>
-                <button type="submit" value="send" class="btn btn-default">Submit</button>
-              </form>
-
+            <div class="checkbox">
+              <label></label>
+            </div>
+            <button type="submit" value="send" class="btn btn-custom">Submit</button>
+          </form>
+        </div>
         </div>
       </section>
 
