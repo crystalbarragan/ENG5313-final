@@ -22,6 +22,7 @@ body {
 a:link,
 a:visited {
   font-weight: 400;
+  color: inherit;
 	text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
@@ -92,6 +93,7 @@ a:active {
   max-width: 600px;
   max-height: 500px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 /* ===================================== */
@@ -182,13 +184,17 @@ a:active {
 }
 
 .about-text {
-  padding-bottom: 40px;
+  font-family: "canada-type-gibson", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .caption-title {
   font-family: "canada-type-gibson", Arial, sans-serif;
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
   color: #153071;
   padding: 20px 0 5px 0;
 }
@@ -196,6 +202,7 @@ a:active {
 .caption {
   font-family: "canada-type-gibson", Arial, sans-serif;
   font-size: 1em;
+  font-weight: 300;
   padding-bottom: 50px;
 }
 

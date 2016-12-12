@@ -34,9 +34,10 @@
     <link rel="stylesheet" href="./css/secondary.css">
   </head>
 
-  <body style="margin-top: 80px;">
+  <body style="margin-top: 100px;">
     <!-- Main navigation -->
     <nav data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md" class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl">
+
       <div class="container">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-menu" aria-hidden="true"></span></button>
@@ -45,13 +46,13 @@
 
         <div id="mobileNav" class="collapse navbar-collapse nav-links">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About Us</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#pricing">Pricing</a></li>
-            <li class="dropdown"><a href="/locations.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li class="dropdown"><a href="./locations.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Central Texas</li>
                 <li><a href="/locations.html">San Marcos</a></li>
@@ -61,120 +62,56 @@
                 <li><a href="#">Beaumont</a></li>
                 <li><a href="#">Port Arthur</a></li>
               </ul>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Get Started</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./getstarted.html">Get Started</a></li>
             </li>
           </ul> <!-- /.navbar-nav -->
         </div><!--nav-links-->
       </div><!--./container-->
-    </nav>
+      </nav>
 
     <header>
       <div class="container banner">
         <div class="row text-center">
           <h2 class="bold blue">Documentation, your way.</h2>
+          <p>We take care of the writing so you can focus on what's important to you.</p>
         </div>
       </div>
     </header>
 
-    <section id="pricing">
-        <div class="container">
-          <div class="row text-center section-intro">
-            <div class="col-xs-12">
-              <h2 class="section-title blue">Find a plan that's right for you</h2>
-                <p>You can learn more about each of these options <a href="#">here</a>.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pricing cards -->
-        <div class="container" id="pricing-content">
-          <div class="card">
-            <div class="card-content">
-              <h5>Basic</h5>
-              <hr>
-              <h1>$25.00<span> / 500 words</span></h1>
-              <hr>
-            <div class="card-info">
-              <p><span>500 MB</span> data</p>
-              <p><span>10 GB</span> storage</p>
-              <p><span>3 months</span> support</p>
-            </div>
-              <hr>
-            <button class="btn btn-pricing">GET IT</button>
-            </div>
-          </div>
-
-          <div class="card special">
-            <div class="medal">
-              <div class="medal-outer">
-                <div class="medal-inner"></div>
-              </div>
-
-              <div class="ribbons">
-                <div class="ribbon left"></div>
-                <div class="ribbon right"></div>
-              </div>
-            </div>
-
-            <div class="card-header">
-              <p>MOST POPULAR</p>
-            </div>
-            <div class="card-content">
-              <h5>Regular</h5>
-              <hr>
-              <h1>$45.00<span> / 500 words</span></h1>
-              <hr>
-            <div class="card-info">
-              <p><span>1 GB</span> data</p>
-              <p><span>20 GB</span> storage</p>
-              <p><span>5 months</span> support</p>
-            </div>
-              <hr>
-              <button class="btn btn-pricing">GET IT</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h5>Premium</h5>
-              <hr>
-              <h1>$65.00<span> / 500 words</span></h1>
-              <hr>
-            <div class="card-info">
-              <p><span>5 GB</span> data</p>
-              <p><span>40 GB</span> storage</p>
-              <p><span>12 months</span> support</p>
-            </div>
-              <hr>
-            <button class="btn btn-pricing">GET IT</button>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section id="companies">
+    <section id="services">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="companies-text">More than 70 teams and 200 developers love Userdocs.io</p>
+        <div class="row text-center">
+          <div class="col-xs-12 col-md-4">
+            <img class="service-icons" src="./assets/compose.svg"/>
+              <h4 class="caption-title">
+                Personalized writing
+              </h4>
+              <p class="caption">We update your product guides, or even develop from scratch.</p>
           </div>
+
+          <div class="col-xs-12 col-md-4">
+            <img class="service-icons" src="./assets/document.svg"/>
+            <h4 class="caption-title">
+              Content strategy consulting
+            </h4>
+            <p class="caption">We work iteratively with you every step of the documentation process. Our content experts are here to help.</p>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <img class="service-icons" src="./assets/browser.svg"/>
+            <h4 class="caption-title">
+              Beautiful documentation
+            </h4>
+            <p class="caption">We're here to help you design beautiful and usable user instructions for your audiences.</p>
+          </div>
+
         </div>
 
-        <!-- Logos -->
-      <div class="container logo-container"
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <img class="img-responsive logo" src="./assets/Texas-State.png" alt="Texas State Logo"/>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <img class="img-responsive logo" src="./assets/footnotes.png" alt="Found Logo"/>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <img class="img-responsive logo" src="./assets/found.png" alt="Footnotes Logo"/>
-          </div>
-        </div>
       </div>
     </section>
+
+  
     <section id="footer">
       <div class="container">
 	        <div class="row">

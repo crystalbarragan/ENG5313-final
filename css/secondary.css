@@ -419,8 +419,10 @@ header .banner {
 /* ===================================== */
 
 #services {
-  background-color: whitesmoke;
+  background-color: #fff;
   padding: 50px 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 
 }
 
