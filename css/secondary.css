@@ -185,17 +185,31 @@ a:active {
   padding-bottom: 40px;
 }
 
+figcaption {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
 .caption-title {
   font-family: "canada-type-gibson", Arial, sans-serif;
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
   color: #153071;
-  padding: 20px 0 5px 0;
+  padding-top: 20px;
+}
+
+.caption-subtitle {
+  font-family: "canada-type-gibson", Arial, sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 .caption {
   font-family: "canada-type-gibson", Arial, sans-serif;
   font-size: 1em;
+  font-weight: 300;
   padding-bottom: 50px;
 }
 
