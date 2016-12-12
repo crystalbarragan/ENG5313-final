@@ -85,21 +85,14 @@ a:active {
 /*----------------*/
 /*---- IFRAME  ---*/
 /*----------------*/
-.responsive {
+
+.video-max-size {
+  display: block;
   position: relative;
-  padding-bottom: 54.25%;
-  padding-top: 25px;
-  height: 0;
+  max-width: 600px;
+  max-height: 500px;
+  margin: 0 auto;
 }
-
-.responsive iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 
 /* ===================================== */
 /* ============== Resets =============== */
@@ -186,6 +179,10 @@ a:active {
   font-size: 1.8em;
   font-weight: 600;
   text-align: center;
+}
+
+.about-text {
+  padding-bottom: 40px;
 }
 
 .caption-title {

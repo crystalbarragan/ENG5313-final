@@ -41,7 +41,7 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-menu" aria-hidden="true"></span></button>
-            <a href="#" class="navbar-center navbar-brand"><i class="icon-book-open"></i>   Userdocs.io</a>
+            <a href="./index.html" class="navbar-center navbar-brand"><i class="icon-book-open"></i>   Userdocs.io</a>
         </div><!--navbar-header-->
 
         <div id="mobileNav" class="collapse navbar-collapse nav-links">
@@ -51,11 +51,11 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Pricing</a></li>
-            <li class="dropdown"><a href="#pricing" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="dropdown"><a href="/locations.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Central Texas</li>
-                <li><a href="#">San Marcos</a></li>
+                <li><a href="/locations.html">San Marcos</a></li>
                 <li><a href="#">Kyle</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Southeast Texas</li>
@@ -97,14 +97,14 @@
             <div class="col-xs-12">
               <p class="about-text text-center">We're a small team of content strategists, information designers and technical writers. We write user instructions without the hassle. We work together to solve your documentation puzzles, and collaborate with your team to make sure we get it right, too.</p>
             </div>
+          </div>
 
-            <div class="row text-center">
-              <img src="http://placehold.it/500x300" alt="story"/>
-
-          <!--<div class="col-xs-12 responsive">
-              <iframe src="https://spark.adobe.com/video/c8rmdnL6SBdLN/embed" allowfullscreen></iframe>
-            </div>-->
-
+          <div class="row video-max-size">
+            <div class="col-xs-12">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://spark.adobe.com/video/c8rmdnL6SBdLN/embed" allowfullscreen></iframe>
+              </div>
+            </div>
           </div> <!--./row-->
         </div><!--./container-->
       </section>
@@ -284,6 +284,21 @@
             <div class="form-group">
               <label for="InputEmail">Your email address</label>
               <input type="email" class="form-control" id="InputEmail">
+            </div>
+
+            <div class="form-group">
+              <label for="optionsRadios1">I'm interested in:</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Documentation services
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  General consulting
+                </label>
+              </div>
             </div>
 
             <div class="form-group">
