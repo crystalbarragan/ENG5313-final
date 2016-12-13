@@ -64,94 +64,105 @@
               </ul>
             <li><a type="button" class="btn btn-link" href="./contact.html">Contact</a></li>
             <li><a href="./getstarted.html"><button type="button" class="btn btn-getstarted">Get Started</button></a></li>
-            </li>
           </ul> <!-- /.navbar-nav -->
         </div><!--nav-links-->
       </div><!--./container-->
       </nav>
 
-      <header>
-        <div class="container banner">
-          <div class="row text-center">
-            <h2 class="bold blue">Our story</h2>
-            <p>We're former teachers, Texas State grads and writing professionals who geek out over movies, tech and publishing great user manuals.</p>
-          </div>
+    <header>
+      <div class="container banner">
+        <div class="row text-center">
+          <h2 class="bold blue">Let us know how we can help.</h2>
+          <p>Our technical writing professionals are just an email or phone call away.</p>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <section id="careers">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 text-center">
-              <figure>
-                <img class="img-responsive crystal" src="./assets/old_main.jpg" alt="Old Main"/>
-                <figcaption>
-                  <p class="caption-subtitle" style="padding-top:20px;">Texas State University</p>
-                </figcaption>
-              </figure>
-            </div>
+    <section id="contact">
 
-            <div class="row">
-              <div class="col-sm-6">
-                <h3 class="bold blue">Small beginnings. Big impact.</h3>
-                <p>Userdocs.io began as a group of students interested in offering technical writing services to startups in the San Marcos and Austin, TX area. The team quickly established a reputation for incredible work, and grew into a small company working from within the Texas State University campus.<p>
-                <p>Today, Userdocs.io works with over 70 companies and 200 developers to create beautiful documentation the affordable way.</p>
+          <div class="container" id="form-content">
+            <form class="form-horizontal" action="https://formspree.io/crystalbarragan@icloud.com"
+    method="POST">
+              <div class="form-group">
+              <label for="InputName">Your name</label>
+              <input type="name" class="form-control" id="InputName">
               </div>
-            </div>
+
+              <div class="form-group">
+                <label for="InputEmail">Your email address</label>
+                <input type="email" class="form-control" id="InputEmail">
+              </div>
+
+              <div class="form-group">
+                <label for="optionsRadios1">I'm interested in:</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Documentation services
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    General consulting
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="InputMessage">How can we help?</label>
+                <textarea class="form-control" id="InputMessage" rows="5">
+                </textarea>
+              </div>
+
+
+              <div class="checkbox">
+                <label></label>
+              </div>
+              <button type="submit" value="send" class="btn btn-custom">Submit</button>
+            </form>
           </div>
-        </div>
-        <hr></hr>
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-sm-12">
-              <h2 class="bold blue">Interested in joining our team?</h2>
-              <p>We're currently have opportunities available for technical writers and interns. You can learn more by visiting our <a href="./careers.html">Careers page</a>.</p>
-              <a href="./careers.html"><button class="btn btn-custom">Join Us</button></a>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
 
-      <section id="footer">
-        <div class="container">
-		        <div class="row">
-			           <div class="col-sm-4 quicklinks">
-                    <ul class="text-left">
-                      <li class="quicklinks-title white">Quicklinks</li>
-                      <li><a href="./about.html">About Userdocs.io</a></li>
-                      <li><a href="./services.html">What We Do</a></li>
-                      <li><a href="./testimonials.html">Testimonials</a></li>
-                      <li><a href="./careers.html">Work With Us!</a></li>
-                    </ul>
-			            </div> <!-- .col-sm-4 -->
 
-			            <div class="col-sm-4 connect">
-                    <p class="white">Connect with us<p>
-                      <form class="form" action="https://formspree.io/crystalbarragan@icloud.com"
-              method="POST">
-                        <div class="form-group">
-                          <label class="light white" for="InputName">Sign up for Userdocs.io articles and resources: </label>
-                          <input type="email" class="form-control" placeholder="Your email">
-                          <button type="submit" value="send" class="btn btn-connect">Submit</button>
-                        </div>
-                      </form>
-			            </div>
-
-			          <div class="col-sm-4 text-right social-icons">
-				          <p><a id="back-to-top" href="#home" title="Back To Top">Back To Top</a></p>
-                    <p class="white">&copy; Crystal Barragán<br>2016, All Rights Reserved</p>
-                  <ul class="text-right">
-                    <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></li>
+    <section id="footer">
+      <div class="container">
+	        <div class="row">
+		           <div class="col-sm-4 quicklinks">
+                  <ul class="text-left">
+                    <li class="quicklinks-title white">Quicklinks</li>
+                    <li><a href="./about.html">About Userdocs.io</a></li>
+                    <li><a href="./services.html">What We Do</a></li>
+                    <li><a href="./testimonials.html">Testimonials</a></li>
+                    <li><a href="./careers.html">Work With Us!</a></li>
                   </ul>
-			          </div> <!-- .col-sm-4 -->
-		        </div> <!-- /.row -->
-	      </div> <!-- /.container -->
-      </section>
+		            </div> <!-- .col-sm-4 -->
 
+		            <div class="col-sm-4 connect">
+                  <p class="white">Connect with us<p>
+                    <form class="form" action="https://formspree.io/crystalbarragan@icloud.com"
+            method="POST">
+                      <div class="form-group">
+                      <label class="light white" for="InputName">Sign up for Userdocs.io articles and resources: </label>
+                      <input type="email" class="form-control" placeholder="Your email">
+                      <button type="submit" value="send" class="btn btn-connect">Sign up</button>
+                      </div>
+                    </form>
+		            </div>
+
+		          <div class="col-sm-4 text-right social-icons">
+			          <p><a id="back-to-top" href="#home" title="Back To Top">Back To Top</a></p>
+                  <p class="white">&copy; Crystal Barragán<br>2016, All Rights Reserved</p>
+                <ul class="text-right">
+                  <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+		          </div> <!-- .col-sm-4 -->
+	        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
