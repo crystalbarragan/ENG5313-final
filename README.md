@@ -2,7 +2,7 @@
 
 This website was developed for a Digital Media and Web Design class at Texas State University. It is a work-in-progress website made using [Bootstrap](http://getbootstrap.com).
 
-![Website screenshot](https://crystalbarragan.github.io/ENG5313-final/assets/userdocsreadme.gif "Userdocs Website Screenshot")
+![Website screenshot](https://raw.githubusercontent.com/crystalbarragan/ENG5313-final/master/assets/userdocsreadme.gif)
 
 ### Features
 
