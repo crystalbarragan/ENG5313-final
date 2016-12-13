@@ -13,8 +13,8 @@ This website was developed for a Digital Media and Web Design class at Texas Sta
 Select **Download** to view and edit this project using a code editor (such as [Brackets](http://brackets.io) or [Sublime Text](http://www.sublimetext.com)). 
 
 ### Contribute
-- Source Code: (https://github.com/crystalbarragan/crystalbarragan.github.io/)
-- Issue Tracker: (https://github.com/crystalbarragan/crystalbarragan.github.io/issues)
+- Source Code: (https://github.com/crystalbarragan/crystalbarragan.github.io/ENG5313-final)
+- Issue Tracker: (https://github.com/crystalbarragan/crystalbarragan.github.io/ENG5313-final/issues)
 
 
 ### Support
