@@ -46,12 +46,12 @@
 
         <div id="mobileNav" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li><a class="btn btn-link" href="#services">Services</a></li>
-            <li><a class="btn btn-link" href="#about">About Us</a></li>
+            <li><a class="btn btn-link" href="./services.html">Services</a></li>
+            <li><a class="btn btn-link" href="./about.html">About Us</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a type="button" class="btn btn-link" href="#pricing">Pricing</a></li>
+            <li><a type="button" class="btn btn-link" href="./pricing.html">Pricing</a></li>
             <li class="dropdown"><a href="./locations.html" class="dropdown-toggle" class="btn btn-link" data-toggle="dropdown" role="button" aria-expanded="false">Locations <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">Central Texas</li>
@@ -62,9 +62,8 @@
                 <li><a href="#">Beaumont</a></li>
                 <li><a href="#">Port Arthur</a></li>
               </ul>
-            <li><a type="button" class="btn btn-link" href="#contact">Contact</a></li>
-            <li><button type="button" class="btn btn-getstarted" href="./getstarted.html">Get Started</button></li>
-            </li>
+            <li><a type="button" class="btn btn-link" href="./contact.html">Contact</a></li>
+            <li><a href="./getstarted.html"><button type="button" class="btn btn-getstarted">Get Started</button></a></li>
           </ul> <!-- /.navbar-nav -->
         </div><!--nav-links-->
       </div><!--./container-->
@@ -73,41 +72,134 @@
     <header>
       <div class="container banner">
         <div class="row text-center">
-          <h2 class="bold blue">Documentation, your way.</h2>
-          <p>We take care of the writing so you can focus on what's important to you.</p>
+          <h2 class="bold blue">Get started for free.</h2>
+          <p>Getting started with Userdocs.io is easy. Just send us your info, and we'll be in touch.</p>
         </div>
       </div>
     </header>
 
-    <section id="services">
+    <section id="getstarted">
+
       <div class="container">
-        <div class="row text-center">
-          <div class="col-xs-12 col-md-4">
-            <img class="service-icons" src="./assets/compose.svg"/>
-              <h4 class="caption-title">
-                Personalized writing
-              </h4>
-              <p class="caption">We update your product guides, or even develop from scratch.</p>
+        <div class="row">
+
+          <div class="col-sm-6">
+            <h2 class="bold blue">Need help?</h2>
+            <p>Check out our pricing plans below.</p>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="width:90%;">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title bold blue">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Basic Plan
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <p class="bold">$25.00 / 500 words</p>
+                    <p><em>Includes:</em></p>
+                      <ul>
+                        <li>PDF deliverable</li>
+                        <li>24/7 customer support</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title bold blue">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Regular Plan
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <p class="bold">$45.00 / 500 words</p>
+                    <p><em>Includes:</em></p>
+                      <ul>
+                        <li>20 GB cloud storage</li>
+                        <li>PDF <b>-or-</b> WebHelp deliverable</li>
+                        <li>Two rounds of user testing</li>
+                        <li>24/7 customer support</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title bold blue">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Premium Plan
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <p class="bold">$65.00 / 500 words</p>
+                    <p><em>Includes:</em></p>
+                      <ul>
+                        <li>40 GB cloud storage</li>
+                        <li>PDF and WebHelp deliverables</li>
+                        <li>Iterative user testing</li>
+                        <li>24/7 customer support</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-xs-12 col-md-4">
-            <img class="service-icons" src="./assets/document.svg"/>
-            <h4 class="caption-title">
-              Content strategy consulting
-            </h4>
-            <p class="caption">We work iteratively with you every step of the documentation process. Our content experts are here to help.</p>
-          </div>
+          <div class="col-sm-6" id="form-content">
+            <form class="form-horizontal" action="https://formspree.io/crystalbarragan@icloud.com"
+      method="POST">
+              <div class="form-group">
+              <label for="InputName">Name:</label>
+              <input type="name" class="form-control" id="InputName">
+              </div>
 
-          <div class="col-xs-12 col-md-4">
-            <img class="service-icons" src="./assets/browser.svg"/>
-            <h4 class="caption-title">
-              Beautiful documentation
-            </h4>
-            <p class="caption">We're here to help you design beautiful and usable user instructions for your audiences.</p>
-          </div>
+              <div class="form-group">
+                <label for="InputEmail">Email address:</label>
+                <input type="email" class="form-control" id="InputEmail">
+              </div>
 
+              <div class="form-group">
+                <label for="InputDoc">Sample user documentation:</label>
+                <p class="help-block">Please upload a sample of your user documents below.</p>
+                <input type="file" id="InputDoc">
+              </div>
+
+              <div class="form-group">
+                <label for="optionsRadios1">I'm interested in:</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Basic plan
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Regular plan
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Premium plan
+                  </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="InputMessage">Additional comments:</label>
+              <textarea class="form-control" id="InputMessage" rows="5">
+              </textarea>
+            </div>
+              <button type="submit" value="send" class="btn btn-custom">SEND</button>
+            </form>
         </div>
-
       </div>
     </section>
 
@@ -118,10 +210,10 @@
 		           <div class="col-sm-4 quicklinks">
                   <ul class="text-left">
                     <li class="quicklinks-title white">Quicklinks</li>
-                    <li><a href="#">About Userdocs.io</a></li>
-                    <li><a href="#">What We Do</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Work With Us!</a></li>
+                    <li><a href="./about.html">About Userdocs.io</a></li>
+                    <li><a href="./services.html">What We Do</a></li>
+                    <li><a href="./testimonials.html">Testimonials</a></li>
+                    <li><a href="./careers.html">Work With Us!</a></li>
                   </ul>
 		            </div> <!-- .col-sm-4 -->
 
