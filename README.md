@@ -1,6 +1,6 @@
 # [website-practice](https://crystalbarragan.github.io/website-practice)
 
-This website was developed for a Digital Media and Web Design class at Texas State University. It's a website made using [Bootstrap](http://getbootstrap.com).
+This website was developed for a Digital Media and Web Design class at Texas State University.
 
 ![Website screenshot](https://raw.githubusercontent.com/crystalbarragan/ENG5313-final/master/assets/userdocsreadme.gif)
 
